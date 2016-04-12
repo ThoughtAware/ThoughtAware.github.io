@@ -9,8 +9,6 @@
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
-img, fieldset { border: 0; }
-
 img
 {
 	max-width: 100%;
@@ -19,44 +17,81 @@ img
 
 body
 {
-	font: 100% 'Lato', sans-serif;
+	font: 400 16px 'Lato', sans-serif;
+	color: #ecf0f1;
 }
 
 /***
 *		Typography
 ***/
 
-.bold
+.heavy-weight
 {
 	font-weight: 700;
 }
-
+.light-weight
+{
+	font-weight: 300;
+}
+.uber-light-weight
+{
+	font-weight: 100;
+}
 /***
 *		Layout
 ***/
 
 
 /***
+*		Links
+***/
+
+a,
+a:hover
+{
+	color: #ecf0f1;
+	text-decoration: none;
+}
+/***
 *		Custom Style
 ***/
-body
+.site
 {
+	width: 100vw;
+	height: 100vh;
 	background-image: url('../images/blue_optimized.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #000;
+  position: relative;
 }
-
+.site-header
+{
+	float: left;
+  padding: .25em;
+}
 .logo
 {
-  padding: 20px;
 	font-size: 2em;
-	font-weight: 100;
-	color: #ecf0f1;
 }
+.site-footer
+{
+	float: right;
+		padding: .5em;
+		font-size: 1.5em;
+}
+
 @media (min-width: 800px)
 {
-	.logo { font-size: 4em; }
+	.logo
+	{
+		font-size: 4em;
+	}
+	.site-footer
+	{
+		padding: 1em;
+		font-size: 2em;
+	}
 }
