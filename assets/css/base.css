@@ -33,10 +33,7 @@ body
 {
 	font-weight: 300;
 }
-.uber-light-weight
-{
-	font-weight: 100;
-}
+
 /***
 *		Layout
 ***/
@@ -85,6 +82,10 @@ a:hover
 
 @media (min-width: 800px)
 {
+	.uber-light-weight
+	{
+		font-weight: 100;
+	}
 	.logo
 	{
 		font-size: 4em;
