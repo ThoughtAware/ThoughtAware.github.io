@@ -1,0 +1,58 @@
+body {
+	background-color: #fff;
+}
+
+nav {
+	background-color: #F0D5BE;
+}
+
+.brand-logo img {
+		width: 50px;
+		height: 50px;
+		margin-top: 2px;
+}
+
+.overlay {
+    background: #707070;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+}
+
+.hero {
+	  position: relative;
+	 	height: 100%;
+	  background-size: cover;
+	  background-position: 20% 30%;
+	  background-repeat: no-repeat;
+		background-image: url('images/woman_looking_down.jpeg');
+}
+.hero-content {
+    position: relative;
+    height: 90vh;
+}
+.hero img {
+    position: absolute;
+    width: 75%;
+    left: 10%;
+    top: 40%;
+    z-index: 1000;
+}
+
+.material-icons.md-72 { font-size: 72px; }
+
+.promo i {
+        margin: 40px 0;
+    color: #000;
+    font-size: 7rem;
+    display: block;
+ }
+
+.sitemap_nav_category>li {
+    font-weight: bold;
+    text-decoration: underline;
+}
