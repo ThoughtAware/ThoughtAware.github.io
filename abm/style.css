@@ -25,11 +25,11 @@ nav {
 
 .hero {
     position: relative;
-    height: 100%;
+	height: 100%;
     background-size: cover;
     background-position: 20% 30%;
     background-repeat: no-repeat;
-    background-image: url('images/woman_looking_down.jpeg');
+	background-image: url('images/woman_looking_down.jpeg');
 }
 .hero-content {
     position: relative;
