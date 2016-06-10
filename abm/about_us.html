@@ -7,7 +7,7 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-      <link rel="stylesheet" href="../style.css">
+      <link rel="stylesheet" href="css/style.css">
 
 
       <!--Let browser know website is optimized for mobile-->
@@ -25,23 +25,22 @@
             Materialize: Navbar Dropdown Menu component
          -->
         <div class="nav-wrapper container">
-          <a href="../index.html" class="brand-logo"><img src="../images/ABM_White_Logo_Mark01.png" alt=""></a>
+          <a href="index.html" class="brand-logo"><img src="img/ABM_White_Logo_Mark01.png" alt=""></a>
           <!--
               Nav for large screens
            -->
           <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="about/about_us.html" class="dropdown-button" data-activates="navDropdownAbout">
+            <li class="active">
+              <a href="about_us.html" class="dropdown-button" data-activates="navDropdownAbout">
                 About Us<i class="material-icons right">arrow_drop_down</i>
               </a>
             </li>
             <ul id="navDropdownAbout" class="dropdown-content">
-              <li><a class="underline" href="../about/about_us.html">About Us</a></li>
-              <li><a href="../about/mission.html">Mission</a></li>
-              <li><a href="about/executive_team.html">Executive Team</a></li>
-              <li><a href="about/executive_team.html">Advisory Board</a></li>
+              <li><a class="underline" href="about_us.html">About Us</a></li>
+              <li><a href="about_us.html#mission">Mission</a></li>
+              <li><a href="about_us.html#executive_team">Executive Team</a></li>
             </ul>
-            <li class="active">
+            <li>
               <a href="care_centers/care_centers.html" class="dropdown-button" data-activates="navDropdownCareCenters">
                 Care Centers<i class="material-icons right">arrow_drop_down</i>
               </a>
@@ -87,12 +86,12 @@
             <li class="no-padding">
               <ul class="collapsible collapsible-accordion">
                 <li>
-                  <a class="collapsible-header">About Us<i class="material-icons right">arrow_drop_down</i></a>
+                  <a class="collapsible-header">About<i class="material-icons right">arrow_drop_down</i></a>
                   <div class="collapsible-body">
                     <ul>
-                      <li><a href="about/mission.html">Mission</a></li>
-                      <li><a href="about/executive_team.html">Executive Team</a></li>
-                      <li><a href="about/executive_team.html">Advisory Board</a></li>
+                      <li><a href="about_us.html">Us</a></li>
+                      <li><a href="about_us.html#mission">Mission</a></li>
+                      <li><a href="about_us.html#executive_team">Executive Team</a></li>
                     </ul>
                   </div>
                 </li>
@@ -162,13 +161,13 @@
               <p class="flow-text">Aesthetics BioMedical’s innovation center is a leader in breakthrough technologies and multiple source combination therapies for our clients, physician network, and the aesthetic arena. We welcome you and your company to partner with us to further the field of aesthetics.</p>
             </div>
             <div class="col s12">
-              <h2>Our Mission</h2>
+              <h2 id="mission">Our Mission</h2>
               <p class="flow-text">Aesthetics BioMedical is committed to the development and distribution of innovative aesthetic devices, products, and services for the global aesthetic market. We integrate state-of-the-art education and training to guarantee the best possible outcomes for our clients and their patients.</p>
 
               <p class="flow-text">Our ongoing support ensures that our customers’ every need is met - from device integration to training support for the life of our relationship. We also innovate new models for the advancement of aesthetic medical practices.</p>
             </div>
             <div class="col s12">
-              <h2>Executive Team</h2>
+              <h2 id="executive_team">Executive Team</h2>
               <div class="row">
                 <!--
                     Materialize Card Component: MaryAnn bio
@@ -176,7 +175,7 @@
                 <div class="col s12 m7 offset-m2">
                   <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="../images/maryann.jpg">
+                      <img class="activator" src="img/maryann.jpg">
                     </div>
                     <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4">MaryAnn Guerra, MBA <br>
@@ -198,7 +197,7 @@
                 <div class="col s12 m7 offset-m2">
                   <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="../images/tim.jpeg">
+                      <img class="activator" src="img/tim.jpeg">
                     </div>
                     <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4">Tim Shanahan, Vice President of Sales ​<i class="material-icons right">more_vert</i></span>
@@ -218,7 +217,7 @@
                 <div class="col s12 m7 offset-m2">
                   <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="../images/farhan.jpg">
+                      <img class="activator" src="img/farhan.jpg">
                     </div>
                     <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4">Dr. Farhan Taghizadeh, M.D. <br>Co-Founder ​<i class="material-icons right">more_vert</i></span>
@@ -252,10 +251,9 @@
           <div class="row">
             <div class="col s6 m2 offset-m1 l2 offset-l1">
               <ul id="sitemap_about">
-                <li><a class="underline" href="about/about_us.html">About Us</a></li>
-                <li><a href="about/mission.html">Mission</a></li>
-                <li><a href="about/executive_team.html">Executive Team</a></li>
-                <li><a href="about/executive_team.html">Advisory Board</a></li>
+                <li><a class="underline" href="about_us.html">About Us</a></li>
+                <li><a href="about_us.html#mission">Mission</a></li>
+                <li><a href="about_us.html#executive_team">Executive Team</a></li>
               </ul>
             </div>
             <div class="col s6 m2 l2">
@@ -303,7 +301,7 @@
           <div class="row">
             <div class="col s2 m1 offset-m1 l1 offset-l1 brand-logo">
               <div class="section">
-                <img src="../images/ABM_White_Logo_Mark01.png" alt="">
+                <img src="img/ABM_White_Logo_Mark01.png" alt="">
               </div>
             </div>
             <div class="col s9 m4 l6">
@@ -317,9 +315,9 @@
             <div class="col s6 m4 offset-m2 l3 offset-l1">
               <ul>
                 <li>
-                  <a href="#"><img src="../images/icon-twitter.png" alt=""></a>
-                  <a href="#"><img src="../images/icon-facebook.png" alt=""></a>
-                  <a href="#"><img src="../images/icon-linkedin.png" alt=""></a>
+                  <a href="#"><img src="img/icon-twitter.png" alt=""></a>
+                  <a href="#"><img src="img/icon-facebook.png" alt=""></a>
+                  <a href="#"><img src="img/icon-linkedin.png" alt=""></a>
                 </li>
               </ul>
               <p>some text</p>
@@ -338,5 +336,5 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-      <script type="text/javascript" src="../app.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
     </body>
