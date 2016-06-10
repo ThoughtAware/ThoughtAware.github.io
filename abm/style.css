@@ -3,13 +3,18 @@ body {
 }
 
 nav {
-	background-color: #F0D5BE;
+	background-color: #d9b792;
+}
+nav li a {
+    font-weight: 100;
 }
 
+.brand-logo { min-width: 60px; }
+
 .brand-logo img {
-		width: 50px;
-		height: 50px;
-		margin-top: 2px;
+	width: 50px;
+	height: 50px;
+	margin-top: 3px;
 }
 
 .overlay {
@@ -20,12 +25,10 @@ nav {
     top: 0;
     left: 0;
     position: absolute;
-    padding: 0;
 }
 
 .hero {
     position: relative;
-    height: 100%;
     background-size: cover;
     background-position: 20% 30%;
     background-repeat: no-repeat;
@@ -35,11 +38,12 @@ nav {
     position: relative;
     height: 90vh;
     width: 90vw;
+    max-width: 875px;
     margin: auto;
 }
 .hero img {
     position: absolute;
-    width: 90%;
+    width: 100%;
     bottom: 10%;
     z-index: 1000;
 }
@@ -49,16 +53,31 @@ nav {
     height: 100%;
 }
 
+.row-padding {
+    padding: 4em 0;
+}
+
+.row-blue { background: blue; }
+
+.row-black { background-color: #bbb !important;  }
+
+.page-footer a {
+    color: #000;
+    font-weight: 300;
+}
+
 .material-icons.md-72 { font-size: 72px; }
 
+.promo {
+    min-height: 30vh;
+    margin-top: 10vh;
+}
+
 .promo i {
-        margin: 40px 0;
+    margin: 40px 0;
     color: #000;
     font-size: 7rem;
     display: block;
  }
 
-.sitemap_nav_category>li {
-    font-weight: bold;
-    text-decoration: underline;
-}
+.underline { text-decoration: underline; }
