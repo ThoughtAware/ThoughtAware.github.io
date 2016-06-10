@@ -32,7 +32,7 @@ nav li a {
     background-size: cover;
     background-position: 20% 30%;
     background-repeat: no-repeat;
-	background-image: url('images/woman_looking_down.jpeg');
+	background-image: url('../img/woman_looking_down.jpeg');
 }
 .hero-content {
     position: relative;
