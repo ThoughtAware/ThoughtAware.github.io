@@ -1,7 +1,7 @@
  <!DOCTYPE html>
-  <html>
     <head>
       <title>AestheticsBioMedical</title>
+      <meta charset="UTF-8">
 
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,23 +20,128 @@
             Navigation
         -->
 
-      <nav role="navigation">
+      <nav>
+        <!--
+            Materialize: Navbar Dropdown Menu component
+         -->
         <div class="nav-wrapper container">
           <a href="index.html" class="brand-logo"><img src="images/ABM_White_Logo_Mark01.png" alt=""></a>
-          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul id="slide-out" class="side-nav">
-            <li><a href="about/about_us.html">About Us</a></li>
-            <li><a href="care_centers/care_centers.html">Care Centers</a></li>
-            <li><a href="prodcuts/products.html">Products</a></li>
-            <li><a href="technology/technology.html">Technology</a></li>
+          <!--
+              Nav for large screens
+           -->
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="about/about_us.html" class="dropdown-button" data-activates="navDropdownAbout">
+                About Us<i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <ul id="navDropdownAbout" class="dropdown-content">
+              <li><a class="underline" href="about/about_us.html">About Us</a></li>
+              <li><a href="about/mission.html">Mission</a></li>
+              <li><a href="about/executive_team.html">Executive Team</a></li>
+              <li><a href="about/executive_team.html">Advisory Board</a></li>
+            </ul>
+            <li>
+              <a href="care_centers/care_centers.html" class="dropdown-button" data-activates="navDropdownCareCenters">
+                Care Centers<i class="material-icons right">arrow_drop_down</i>
+              </a>
+              <ul id="navDropdownCareCenters" class="dropdown-content">
+                <li><a class="underline" href="care_centers/care_centers.html">Care Centers</a></li>
+                <li><a href="care_centers/experience.html">Experience</a></li>
+                <li><a href="care_centers/training.html">Training</a></li>
+                <li><a href="care_centers/locations.html">Locations</a></li>
+                <li><a href="care_centers/start.html">Start a Care Center</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="prodcuts/products.html" class="dropdown-button" data-activates="navDropdownProducts">
+                Products<i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <ul id="navDropdownProducts" class="dropdown-content">
+              <li><a class="underline" href="products.html">Products</a></li>
+              <li><a href="products/vivace/vivace.html">VIVACE</a></li>
+              <li><a href="products/peptide_glide/peptide_glide.html">3x Peptide Glide</a></li>
+              <li><a href="products/binteren_mask/binteren_mask.html">Binteren Mask</a></li>
+              <li><a href="products/amniospray/amniospray.html">AmnioSpray</a></li>
+            </ul>
+            <li>
+              <a href="technology/technology.html" class="dropdown-button" data-activates="navDropdownTechnology">
+                Technology<i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <ul id="navDropdownTechnology" class="dropdown-content">
+              <li><a class="underline" href="technology.html">Technology</a></li>
+              <li><a href="technology/regulatory_expertise.html">Regulatory Expertise</a></li>
+              <li><a href="technology/ip.html">Intellectual Property</a></li>
+              <li><a href="technology/partner.html">Partner With Us</a></li>
+            </ul>
             <li><a href="news.html">News</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="about/about_us.html">About Us</a></li>
-            <li><a href="care_centers/care_centers.html">Care Centers</a></li>
-            <li><a href="prodcuts/products.html">Products</a></li>
-            <li><a href="technology/technology.html">Technology</a></li>
+          <!--
+              Nav for small and medium screens
+           -->
+          <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
+          <ul id="slide-out" class="side-nav">
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li>
+                  <a class="collapsible-header">About Us<i class="material-icons right">arrow_drop_down</i></a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="about/mission.html">Mission</a></li>
+                      <li><a href="about/executive_team.html">Executive Team</a></li>
+                      <li><a href="about/executive_team.html">Advisory Board</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li>
+                  <a class="collapsible-header">Care Centers<i class="material-icons right">arrow_drop_down</i></a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="care_centers/experience.html">Experience</a></li>
+                      <li><a href="care_centers/training.html">Training</a></li>
+                      <li><a href="care_centers/locations.html">Locations</a></li>
+                      <li><a href="care_centers/start.html">Start a Care Center</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li>
+                  <a class="collapsible-header">Products<i class="material-icons right">arrow_drop_down</i></a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="products/vivace/vivace.html">VIVACE</a></li>
+                      <li><a href="products/peptide_glide/peptide_glide.html">3x Peptide Glide</a></li>
+                      <li><a href="products/binteren_mask/binteren_mask.html">Binteren Mask</a></li>
+                      <li><a href="products/amniospray/amniospray.html">AmnioSpray</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li>
+                  <a class="collapsible-header">Technology<i class="material-icons right">arrow_drop_down</i></a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="technology/regulatory_expertise.html">Regulatory Expertise</a></li>
+                      <li><a href="technology/ip.html">Intellectual Property</a></li>
+                      <li><a href="technology/partner.html">Partner With Us</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
             <li><a href="news.html">News</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -44,135 +149,158 @@
       </nav>
 
       <!--
+            Head
+      -->
+
+      <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <!-- <div class="hero-img-container"> -->
+            <img src="images/ABM_White_Horiz_Logo01.png" alt="">
+          <!-- </div> -->
+        </div>
+      </header>
+
+      <!--
             Main
         -->
 
       <main>
-        <div class="hero">
-          <div class="overlay"></div>
-          <div class="hero-content">
-            <div class="hero-img-container">
-              <img src="images/ABM_White_Logo01.png" alt="">
-            </div>
-          </div>
-        </div>
         <div class="row">
-          <div class="col s10 offset-s1 m8 offset-m2 l4">
-            <div class="center promo">
+          <div class="promo col s10 offset-s1 m8 offset-m2">
+            <div class="center ">
 
-              <i class="material-icons md-72">star</i>
               <h3>The Expert in Aesthetics</h3>
 
-              <p>Aesthetics BioMedical, Inc. is an aesthetic innovation company. We are committed to the development and distribution of the highest quality innovative aesthetic devices, products, and services.</p>
+              <p class="flow-text">Aesthetics BioMedical, Inc. is an aesthetic innovation company. We are committed to the development and distribution of the highest quality innovative aesthetic devices, products, and services.</p>
+              <!-- <i class="material-icons md-72">star</i> -->
             </div>
           </div>
-          <div class="col s10 offset-s1  m8 offset-m2 l4">
-            <div class="center promo">
+          <div class="promo col s10 offset-s1 m8 offset-m2">
+            <div class="center ">
 
-              <i class="material-icons md-72">thumb_up</i>
               <h3>Only the Best</h3>
 
-              <p>Aesthetics BioMedical is in perpetual persuit of only the best <a href="products/products.html">products</a> &amp; <a href="technology/technology.html">technology</a> for our clients, physician network, and partners.</p>
+              <p class="flow-text">Aesthetics BioMedical is in perpetual persuit of only the best <a href="products/products.html">products</a> &amp; <a href="technology/technology.html">technology</a> for our clients, physician network, and partners.</p>
 
-              <p>Learn how we craft amazing patient experiences at our <a href="care_centers/care_centers.html">clinical care centers</a>.</p>
+              <p class="flow-text">Learn how we craft amazing patient experiences at our <a href="care_centers/care_centers.html">clinical care centers</a>.</p>
+              <!-- <i class="material-icons md-72">thumb_up</i> -->
             </div>
           </div>
-          <div class="col s10 offset-s1  m8 offset-m2 l4">
-            <div class="center promo">
+          <div class="promo col s10 offset-s1 m8 offset-m2">
+            <div class="center">
 
-              <i class="material-icons md-72">people </i>
               <h3>Partner With Us</h3>
 
-              <p>Do you have an idea for a device or technology and don't know how to secure patents? Do you lack the knowledge and experience to successfully navigate the regulatory requirements for your intellectual property?</p>
+              <p class="flow-text">Do you have an idea for a device or technology and don't know how to secure patents? Do you lack the knowledge and experience to successfully navigate the regulatory requirements for your intellectual property?</p>
 
-              <p>Aesthetics BioMedical is always looking for partners who are advancing the aesthetics arena. </p>
+              <p class="flow-text">Aesthetics BioMedical is always looking for partners who are advancing the aesthetics arena. </p>
 
-              <p><a href="contact.html">Contact us</a> to learn how our extensive and proven FDA clearence expertise, breakthrough innovation center, and clinical care centers can help you.</p>
+              <p class="flow-text"><a href="contact.html">Contact us</a> to learn how our extensive and proven FDA clearence expertise, breakthrough innovation center, and clinical care centers can help you.</p>
+              <!-- <i class="material-icons md-72">people </i> -->
             </div>
           </div>
         </div>
       </main>
-      <div class="divider"></div>
+
       <!--
             Footer
         -->
-    <div class="container section">
+      <footer class="page-footer row-black">
+        <div class="container">
 
-      <footer class="site-footer">
-        <div id="sitemap-container" class="row center">
-          <div class="col s12 m2 offset-m1 l2 offset-l1">
-            <ul id="sitemap_about"  class="sitemap_nav_category">
-              <li><a href="about/about_us.html">About Us</a></li>
-              <ul>
+          <!--
+                Sitemap
+            -->
+
+          <div class="row">
+            <div class="col s6 m2 offset-m1 l2 offset-l1">
+              <ul id="sitemap_about">
+                <li><a class="underline" href="about/about_us.html">About Us</a></li>
                 <li><a href="about/mission.html">Mission</a></li>
                 <li><a href="about/executive_team.html">Executive Team</a></li>
                 <li><a href="about/executive_team.html">Advisory Board</a></li>
               </ul>
-            </ul>
-          </div>
-          <div class="col s12 m2 l2">
-            <ul id="sitemap_care_centers" class="sitemap_nav_category">
-              <li><a href="care_centers/care_centers.html">Care Centers</a></li>
-              <ul>
+            </div>
+            <div class="col s6 m2 l2">
+              <ul id="sitemap_care_centers">
+                <li><a class="underline" href="care_centers/care_centers.html">Care Centers</a></li>
                 <li><a href="care_centers/experience.html">Experience</a></li>
                 <li><a href="care_centers/training.html">Training</a></li>
                 <li><a href="care_centers/locations.html">Locations</a></li>
                 <li><a href="care_centers/start.html">Start a Care Center</a></li>
               </ul>
-            </ul>
-          </div>
-          <div class="col s12 m2 l2">
-            <ul id="sitemap_products" class="sitemap_nav_category">
-              <li><a href="products.html">Products</a></li>
-              <ul>
+            </div>
+            <div class="col s6 m2 l2">
+              <ul id="sitemap_products">
+                <li><a class="underline" href="products.html">Products</a></li>
                 <li><a href="products/vivace/vivace.html">VIVACE</a></li>
                 <li><a href="products/peptide_glide/peptide_glide.html">3x Peptide Glide</a></li>
                 <li><a href="products/binteren_mask/binteren_mask.html">Binteren Mask</a></li>
                 <li><a href="products/amniospray/amniospray.html">AmnioSpray</a></li>
               </ul>
-            </ul>
-          </div>
-          <div class="col s12 m2 l2">
-            <ul id="sitemap_technology" class="sitemap_nav_category">
-              <li><a href="technology.html">Technology</a></li>
-              <ul>
+            </div>
+            <div class="col s6 m2 l2">
+              <ul id="sitemap_technology">
+                <li><a class="underline" href="technology.html">Technology</a></li>
                 <li><a href="technology/regulatory_expertise.html">Regulatory Expertise</a></li>
                 <li><a href="technology/ip.html">Intellectual Property</a></li>
                 <li><a href="technology/partner.html">Partner With Us</a></li>
               </ul>
-            </ul>
+            </div>
+            <div class="col s6 m2 l1">
+              <ul id="sitemap_news">
+                <li><a class="underline" href="news.html">News</a></li>
+              </ul>
+            </div>
+            <div class="col s6 offset-s6 m2 l1">
+              <ul id="sitemap_contact">
+                <li><a class="underline" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="col s12 m2 l2">
-            <ul id="sitemap_news" class="sitemap_nav_category">
-              <li><a href="news.html">News</a></li>
-            </ul>
-            <ul id="sitemap_contact" class="sitemap_nav_category">
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <div class="divider"></div>
+          <!--
+                Contact information
+            -->
+
+          <div class="row">
+            <div class="col s2 m1 offset-m1 l1 offset-l1 brand-logo">
+              <div class="section">
+                <img src="images/ABM_White_Logo_Mark01.png" alt="">
+              </div>
+            </div>
+            <div class="col s9 m4 l6">
+              <p class="white-text light" >
+                Aesthetics BioMedical, Inc. <br>
+                2702 N. 3rd street <br>
+                Suite 3001 <br>
+                Phoenix, Arizona 85004
+              </p>
+            </div>
+            <div class="col s12 m4 l3">
+              <ul>
+                <li>
+                  <a href="#"><img src="images/icon-twitter.png" alt=""></a>
+                  <a href="#"><img src="images/icon-facebook.png" alt=""></a>
+                  <a href="#"><img src="images/icon-linkedin.png" alt=""></a>
+                </li>
+              </ul>
+              <p>some text</p>
+            </div>
           </div>
         </div>
-        <div class="section center">
-        <div class="social-media center">
-            <ul>
-              <li>
-                <a href="#"><img src="images/icon-twitter.png" alt=""></a>
-                <a href="#"><img src="images/icon-facebook.png" alt=""></a>
-                <a href="#"><img src="images/icon-linkedin.png" alt=""></a>
-              </li>
-            </ul>
-        </div>
-        <div class="copyright">
+        <!--
+              Copyright
+           -->
+
+        <div class="footer-copyright center-align">
           &copy; 2016 Aesthetics BioMedical, Inc. All Rights Reserved.
         </div>
-        </div>
       </footer>
-    </div>
-
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
       <script type="text/javascript" src="app.js"></script>
-
     </body>
-  </html>
