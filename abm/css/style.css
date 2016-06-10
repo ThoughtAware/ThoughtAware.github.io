@@ -81,3 +81,11 @@ nav li a {
  }
 
 .underline { text-decoration: underline; }
+
+.card-image-product {
+    max-height: 200px;
+    min-height: 200px;
+}
+.card img {
+    max-height: 200px;
+}
