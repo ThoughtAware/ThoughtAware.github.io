@@ -1,13 +1,8 @@
-body {
-	background-color: #fff;
-}
+body { background-color: #fff; }
 
-nav {
-	background-color: #d9b792;
-}
-nav li a {
-    font-weight: 100;
-}
+nav { background-color: #d9b792; }
+
+nav li a { font-weight: 100; }
 
 .brand-logo { min-width: 60px; }
 
@@ -34,6 +29,7 @@ nav li a {
     background-repeat: no-repeat;
 	background-image: url('../img/woman_looking_down.jpeg');
 }
+
 .hero-content {
     position: relative;
     height: 90vh;
@@ -41,12 +37,14 @@ nav li a {
     max-width: 875px;
     margin: auto;
 }
+
 .hero img {
     position: absolute;
     width: 100%;
     bottom: 10%;
     z-index: 1000;
 }
+
 .hero-img-container {
     margin: auto;
     width: 80vw;
@@ -86,6 +84,19 @@ nav li a {
     max-height: 200px;
     min-height: 200px;
 }
-.card img {
-    max-height: 200px;
+
+.card img { max-height: 200px; }
+
+.product-banner {
+    width: 150px;
+    height: 450px;
+    margin: 10vh auto;
 }
+
+.product-banner-image { width: 133px; }
+
+.product-sub-header { text-align: center; }
+
+.smallish { height: 350px; }
+
+.bullets li { list-style-type: disc; }
