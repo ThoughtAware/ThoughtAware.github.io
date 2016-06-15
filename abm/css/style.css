@@ -1,4 +1,17 @@
-body { background-color: #fff; }
+@font-face {
+    font-family: 'newsGothicStd';
+    src: url(../fonts/news_gothic_std.otf);
+}
+@font-face {
+    font-family: 'newsGothicStd';
+    src: url(../fonts/news_gothic_std_bold.otf);
+    font-weight: bold;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'newsGothicStd', sans-serif;
+}
 
 nav { background-color: #d9b792; }
 
