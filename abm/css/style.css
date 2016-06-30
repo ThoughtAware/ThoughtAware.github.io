@@ -8,10 +8,17 @@
     font-weight: bold;
 }
 
+.sans-serif li { font-family: sans-serif; }
+
+.roboto li { font-family: "Roboto"; }
+
 body {
     background-color: #fff;
-    font-family: 'newsGothicStd', sans-serif;
+    color: #666;
+    font-family: bariol-regular, arial, helvetica, sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 { color: #444; }
 
 nav { background-color: #d9b792; }
 
@@ -64,16 +71,17 @@ nav li a { font-weight: 100; }
     height: 100%;
 }
 
+
 .row-padding {
     padding: 4em 0;
 }
 
 .row-blue { background: blue; }
 
-.row-black { background-color: #bbb !important;  }
+.row-black { background-color: #000 !important;  }
 
 .page-footer a {
-    color: #000;
+    color: #d3d3d3;
     font-weight: 300;
 }
 
@@ -100,6 +108,8 @@ nav li a { font-weight: 100; }
 
 .card img { max-height: 200px; }
 
+.product-hero {
+}
 .product-banner {
     width: 150px;
     height: 450px;
@@ -110,6 +120,57 @@ nav li a { font-weight: 100; }
 
 .product-sub-header { text-align: center; }
 
+.vivace-subheader {
+    font-size: 2em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.line-height-2 { line-height: 2em; }
+
+.padding-left-2 { padding-left: 2em; }
+
+.small-image { width: 350px; }
+
+.image-width-60 { max-width: 60px; }
+
+.image-width-150 { max-width: 150px; }
+
+.image-width-400 { max-width: 400px; }
+
+
 .smallish { height: 350px; }
 
 .bullets li { list-style-type: disc; }
+
+.content-page-header { height: 200px; }
+
+.content-page-header h1 {
+    margin: 0;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.sub-header { padding: 50px 0; }
+
+.profile-pic {
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+.team-sub-title {
+    font-size: 1.25em;
+    color: #000;
+    font-style: italic;
+}
+
+.team p { font-size: 1.25em; }
+
+.about .divider { margin-top: 100px; }
+
+.top-margin-50 { margin-top: 50px; }
+
+.top-margin-100 { margin-top: 100px; }
+
+.left-margin-30 { margin-left: 30px }
+

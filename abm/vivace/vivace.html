@@ -7,6 +7,7 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+      <link rel="stylesheet" href="../css/materialize.css">
       <link rel="stylesheet" href="../css/style.css">
 
 
@@ -16,187 +17,278 @@
 
     <body>
 
-      <!--
-            Navigation
-        -->
+      <header>
+        <div class="row row-black valign-wrapper">
+          <div class="col s12 m4 offset-m3 l3 offset-l2">
+            <img class="valign top-margin-50" src="../img/Vivace_Front_black_reduced.png" alt="">
+          </div>
 
-      <nav>
-        <!--
-            Materialize: Navbar Dropdown Menu component
-         -->
-        <div class="nav-wrapper container">
-          <a href="../index.html" class="brand-logo"><img src="../img/ABM_White_Logo_Mark01.png" alt=""></a>
-          <!--
-              Nav for large screens
-           -->
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="about_us.html" class="dropdown-button" data-activates="navDropdownAbout">
-                About Us<i class="material-icons right">arrow_drop_down</i>
-              </a>
-            </li>
-            <ul id="navDropdownAbout" class="dropdown-content">
-              <li><a class="underline" href="about_us.html">About Us</a></li>
-              <li><a href="about_us.html#mission">Mission</a></li>
-              <li><a href="about_us.html#executive_team">Executive Team</a></li>
-            </ul>
-            <li>
-              <a href="care_centers/care_centers.html" class="dropdown-button" data-activates="navDropdownCareCenters">
-                Care Centers<i class="material-icons right">arrow_drop_down</i>
-              </a>
-              <ul id="navDropdownCareCenters" class="dropdown-content">
-                <li><a class="underline" href="care_centers/care_centers.html">Care Centers</a></li>
-                <li><a href="care_centers/experience.html">Experience</a></li>
-                <li><a href="care_centers/training.html">Training</a></li>
-                <li><a href="care_centers/locations.html">Locations</a></li>
-                <li><a href="care_centers/start.html">Start a Care Center</a></li>
-              </ul>
-            </li>
-            <li class="active">
-              <a href="prodcuts/products.html" class="dropdown-button" data-activates="navDropdownProducts">
-                Products<i class="material-icons right">arrow_drop_down</i>
-              </a>
-            </li>
-            <ul id="navDropdownProducts" class="dropdown-content">
-              <li><a class="underline" href="../products.html">Products</a></li>
-              <li><a href="vivace.html">VIVACE</a></li>
-              <li><a href="../peptide_glide/peptide_glide.html">3x Peptide Glide</a></li>
-              <li><a href="../binteren_mask/binteren_mask.html">Binteren Mask</a></li>
-              <li><a href="../amniospray/amniospray.html">AmnioSpray</a></li>
-            </ul>
-            <li>
-              <a href="technology/technology.html" class="dropdown-button" data-activates="navDropdownTechnology">
-                Technology<i class="material-icons right">arrow_drop_down</i>
-              </a>
-            </li>
-            <ul id="navDropdownTechnology" class="dropdown-content">
-              <li><a class="underline" href="technology.html">Technology</a></li>
-              <li><a href="technology/regulatory_expertise.html">Regulatory Expertise</a></li>
-              <li><a href="technology/ip.html">Intellectual Property</a></li>
-              <li><a href="technology/partner.html">Partner With Us</a></li>
-            </ul>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <!--
-              Nav for small and medium screens
-           -->
-          <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
-          <ul id="slide-out" class="side-nav">
-            <li class="no-padding">
-              <ul class="collapsible collapsible-accordion">
-                <li>
-                  <a class="collapsible-header">About<i class="material-icons right">arrow_drop_down</i></a>
-                  <div class="collapsible-body">
-                    <ul>
-                      <li><a href="about_us.html">Us</a></li>
-                      <li><a href="about_us.html#mission">Mission</a></li>
-                      <li><a href="about_us.html#executive_team">Executive Team</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="no-padding">
-              <ul class="collapsible collapsible-accordion">
-                <li>
-                  <a class="collapsible-header">Care Centers<i class="material-icons right">arrow_drop_down</i></a>
-                  <div class="collapsible-body">
-                    <ul>
-                      <li><a href="care_centers/experience.html">Experience</a></li>
-                      <li><a href="care_centers/training.html">Training</a></li>
-                      <li><a href="care_centers/locations.html">Locations</a></li>
-                      <li><a href="care_centers/start.html">Start a Care Center</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="no-padding">
-              <ul class="collapsible collapsible-accordion">
-                <li>
-                  <a class="collapsible-header">Products<i class="material-icons right">arrow_drop_down</i></a>
-                  <div class="collapsible-body">
-                    <ul>
-                      <li><a href="vivace.html">VIVACE</a></li>
-                      <li><a href="../peptide_glide/peptide_glide.html">3x Peptide Glide</a></li>
-                      <li><a href="../binteren_mask/binteren_mask.html">Binteren Mask</a></li>
-                      <li><a href="../amniospray/amniospray.html">AmnioSpray</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="no-padding">
-              <ul class="collapsible collapsible-accordion">
-                <li>
-                  <a class="collapsible-header">Technology<i class="material-icons right">arrow_drop_down</i></a>
-                  <div class="collapsible-body">
-                    <ul>
-                      <li><a href="technology/regulatory_expertise.html">Regulatory Expertise</a></li>
-                      <li><a href="technology/ip.html">Intellectual Property</a></li>
-                      <li><a href="technology/partner.html">Partner With Us</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+          <!-- for large screens only -->
+
+          <div class="col l3 offset-l1 hide-on-med-and-down">
+            <h1 class="white-text center-align">VIVACE</h1>
+            <div class="divider"></div>
+            <h2 class="white-text vivace-subheader center-align">SMART &amp; SIMPLE</h2>
+          </div>
+          <div class="divider"></div>
         </div>
-      </nav>
-
-      <!--
-            Main
-        -->
+      </header>
 
       <main>
-        <div class="product-banner">
-          <div class="product-banner-image">
-            <img src="../img/vivace_front_0_degrees.png" alt="">
+        <div class="container">
+
+          <!-- for medium and small screens -->
+
+          <div class="row hide-on-large-only">
+            <div class="col s10 offset-s1">
+              <h1 class="center-align top-margin-50">VIVACE</h1>
+              <h2 class="vivace-subheader center-align">SMART &amp; SIMPLE</h2>
+              <div class="divider"></div>
+            </div>
+          </div>
+
+        <!--
+            Overview
+         -->
+
+          <div class="row">
+            <div class="col s10 offset-s1">
+              <p class="flow-text">
+                The new generation of advanced Micro-Needling RF at the right time. Patient demand is at an all time high and they’re looking for the next level of micro-needling treatment. Vivace RF gives your patients better results, less pain and less downtime!
+              </p>
+            </div>
+          </div>
+
+        <!--
+            For Physicians
+         -->
+
+          <div class="row">
+            <div class="col s10 offset-s1">
+              <h3 class="center-align">Designed for Physicians</h3>
+              <div class="divider"></div>
+            </div>
+            <div class="col s10 offset-s1 m6 offset-m1">
+              <p>
+                The guarded gold needles of the Vivace and the robotically driven hand piece offers one of the most comfortable devices for micro-needling in the world today. We also offer unguarded needles for select cases.
+              </p>
+            </div>
+            <div class="col s10 offset-s1 m4">
+              <div class="section">
+                <img class="responsive-img" src="../img/Vivace_Handpiece_344K_brushed.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        <!--
+            Features
+         -->
+
+          <div class="row">
+            <div class="col s10 offset-s1">
+              <h3 class="center-align">Features</h3>
+              <div class="divider"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s10 offset-s1 m3 offset-m1">
+              <div class="section">
+                <img class="responsive-img" src="../img/vivace_left_angle_brushed.png" alt="">
+              </div>
+            </div>
+            <div class="col s10 offset-s1 m6 offset-m1">
+              <div class="section">
+                <h5>Micro-Needling Multilevel RF System (FDA 510 K150409)</h5>
+                <ul class="bullets line-height-2 padding-left-2">
+                  <li>Micro-Needling Multi-Level RF System</li>
+                  <li>Most Comfortable Client Experience</li>
+                  <li>Best Priced Microneedling RF Syste</li>
+                  <li>31 Multi-Level Precise Depths</li>
+                  <li>Robotic Soothe Glide Handpiece for Gentle Insertion</li>
+                  <li>1 MHz Radiofrequency</li>
+                  <li>36 Gold, Perfectly Sized Insulated Needles</li>
+                  <li>70 Watts</li>
+                  <li>Red and Blue LED</li>
+                  <li>AVC (Automatic Visualization Confirmation)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        <!--
+            Science
+          -->
+
+          <div class="row">
+            <div class="col s10 offset-s1">
+              <h3 class="center-align">VIVACE Science</h3>
+              <div class="divider"></div>
+            </div>
+
+            <div class="col s10 offset-s1 m5 offset-m1">
+              <div class="section">
+                <h5 class="center-align">CIT (Collagen Induction Therapy) by Micro-Needling Multilevel RF</h5>
+                <div class="section">
+                  <img class="responsive-img" src="../img/vivace_science.png" alt="">
+                </div>
+                <p>
+                  When applied to the skin, under topical anesthesia, sterile Micro-needles are used to create many microscopic channels deep into the dermis of the skin that can stay open up to 4-6 hours. This stimulates your own body to produce new collagen. The precise delivery of RF energy to 31 varying depths of penetration gives the Vivace exceptional outcomes.
+                </p>
+              </div>
+            </div>
+            <div class="col s10 offset-s1 m5">
+              <div class="section">
+                <h5 class="center-align">WHM (Wound Healing Mechanisms) by Multilevel RF energy</h5>
+                <div class="section">
+                  <img class="responsive-img" src="../img/vivace_science_2.png" alt="">
+                </div>
+                <p>
+                  Vivace microneedles are insulated except the end point (0.4mm), Micro-needle electrodes deliver bi-polar energy deep into dermis without damaging the epidermis. Minimally invasive RF thermal energy creates fractional electrocoagulation in the dermis which facilitates a natural wound healing process. WHM promotes the remodeling of collagen, elastin and wound contraction, which enhances skin laxity.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        <!--
+            Distinction
+          -->
+
+          <!-- <div class="row">
+            <div class="col s10 offset-s1">
+              <h3 class="center-align">VIVACE Distinction</h3>
+              <div class="divider"></div>
+            </div>
+            <div class="row">
+              <div class="col s10 offset-s1 m3 offset-m3">
+                <div class="section">
+                  <img class="image-width-400" src="../img/vivace_distinction_1.png" alt="">
+                </div>
+              </div>
+              <div class="col s10 offset-s1 m3">
+                <div class="section">
+                  <img class="image-width-400" src="../img/vivace_distinction_2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s10 offset-s1 m6 offset-m4">
+                <div class="section">
+                  <h5>Light Emitting Diode</h5>
+                  <p>Pulses of light activate skin cell to increase collagen production, moisture levels in skin and improve skin tone &amp; texture.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s5 offset-s1 m3 offset-m3">
+                <img class="image-width-150 left-margin-30" src="../img/Vivace_TIP_Blue_reduced.png" alt="">
+                <p class="center-align">Blue LED</p>
+              </div>
+              <div class="col s5 m3">
+                <img class="center image-width-150 left-margin-30" src="../img/Vivace_TIP_Red_reduced.png" alt="">
+                <p class="center-align">Red LED</p>
+              </div>
+            </div>
+          </div> -->
+
+        <!--
+            Before & After
+         -->
+
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <h3 class="center-align">Before &amp; After</h3>
+            <div class="divider"></div>
+            <div class="section">
+              <div class="slider">
+                <ul class="slides">
+                  <li>
+                    <img src="../img/before_after/ba1.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba2.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba3.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba4.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba5.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba6.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba7.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba8.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba9.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba10.png">
+                  </li>
+                  <li>
+                    <img src="../img/before_after/ba11.png">
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="divider"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <h1 class="center-align">VIVACE</h1>
-              <p class="flow-text center-align"><em>The New Generation of Advanced Micro-Needling RF</em></p>
-            </div>
-            <div class="col s10 offset-s1 m5 offset-m4">
-              <ul class="bullets">
-                <li>Micro-Needling Multi-Level RF Syste</li>
-                <li>Most Comfortable Client Experience</li>
-                <li>Best Priced Microneedling RF Syste</li>
-                <li>31 Multi-Level Precise Depths</li>
-                <li>Robotic Soothe GLide Handpiece for Gentle Insertion</li>
-                <li>1 MHz Radiofrequency</li>
-                <li>36 Gold, Perfectly Sized Insulated Needles</li>
-                <li>70 Watts</li>
-                <li>Red and Blue LED</li>
-                <li>AVC (Automatic Visualization Confirmation</li>
-              </ul>
-            </div>
-            <div class="col s12">
-              <p class="flow-text">The Vivace device is a revolutionary combination of radio frequency and microneedling. The device works by incorporating radio frequency energy into each individual needle, driving the rejuvenating ​energy deep into the skin and stimulating the healthy growth of new collagen. This minimally invasive procedure is nearly painless with the use of a topical numbing agent and can be performed in less than one hour per treatment.</p>
 
-              <p class="flow-text">Our ongoing support ensures that our customers’ every need is met - from device integration to training support for the life of our relationship. We also innovate new models for the advancement of aesthetic medical practices.</p>
+
+        <!--
+            Technical Specs
+         -->
+
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <h3 class="center-align">Specifications</h3>
+            <div class="divider"></div>
+          </div>
+          <div class="col s10 offset-s1">
+            <div class="section">
+              <table class="bordered responsive-table">
+                <thead>
+                  <tr>
+                    <th>Model Name</th>
+                    <th>Power Input</th>
+                    <th>Dimensions</th>
+                    <th>Weight</th>
+                    <th>Output Frequency</th>
+                    <th>Power</th>
+                    <th>Interface</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>VIVACE</td>
+                    <td>110</td>
+                    <td>15" (W) x  14" (D) x 45" (H)</td>
+                    <td>55 lbs</td>
+                    <td>1MHz</td>
+                    <td>70 watts</td>
+                    <td>10.4 inch LCD Touch screen</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="col s9 offset-s1 m4 offset-m4 l3 offset-l4">
-              <div class="card smallish">
-                <div class="card-image">
-                  <img src="../img/tim.jpeg">
-                </div>
-                <div class="card-content">
-                  <p>Tim Shanahan, VP Sales</p>
-                  <p>Phone: (916) 802-5308</p>
-                </div>
-                <div class="card-action">
-                  <a href="mailto:tim@aestheticsbiomed.com">Email Tim >></a>
-                </div>
-              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <h5 class="center-align">Contact us today for more information!</h5>
+            <div class="section center-align">
+              <img class="circle image-width-150 profile-pic" src="../img/tim_sq.jpeg">
+              <p>Tim Shanahan, VP for Sales</p>
+              <p>Phone: (916) 802-5308</p>
+              <a class="waves-effect waves-light btn blue" href="mailto:tim@aestheticsbiomed.com">Email Tim</a>
             </div>
           </div>
         </div>
@@ -301,5 +393,6 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-      <script type="text/javascript" src="../app.js"></script>
+      <!-- <script type="text/javascript" src="../js/materialize.js"></script> -->
+      <script type="text/javascript" src="../js/app.js"></script>
     </body>
