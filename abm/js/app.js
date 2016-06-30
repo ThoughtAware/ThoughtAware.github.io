@@ -3,4 +3,6 @@ $().ready(function() {
       edge: 'right'
     }
   );
+  $('.slider').slider({full_width: false});
+
 });

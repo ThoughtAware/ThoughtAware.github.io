@@ -153,7 +153,7 @@ nav li a { font-weight: 100; }
 
 .sub-header { padding: 50px 0; }
 
-.team img {
+.profile-pic {
     max-width: 200px;
     margin-top: 20px;
 }
@@ -171,3 +171,6 @@ nav li a { font-weight: 100; }
 .top-margin-50 { margin-top: 50px; }
 
 .top-margin-100 { margin-top: 100px; }
+
+.left-margin-30 { margin-left: 30px }
+
