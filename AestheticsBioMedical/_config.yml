@@ -22,5 +22,3 @@ youtube_username: aestheticsbiomed
 
 # Build settings
 markdown: kramdown
-sass:
-    sass_dir: assets/stylesheets
