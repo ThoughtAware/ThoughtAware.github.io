@@ -8,8 +8,8 @@ $spacing-unit: 2em;
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
-
 $gray-base:              #000 !default;
+$gray-very-dark:				 #1f1f1f!important;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
@@ -37,7 +37,7 @@ $body-bg:               #fff !default;
 $text-color:            $gray-dark !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $brand-primary;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
@@ -496,7 +496,7 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 $jumbotron-padding:              30px !default;
 $jumbotron-color:                inherit !default;
 $jumbotron-bg:                   $white;
-$jumbotron-heading-color:        #333;
+$jumbotron-heading-color:        $gray-light;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
 

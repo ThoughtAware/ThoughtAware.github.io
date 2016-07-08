@@ -9,9 +9,11 @@
 title: Aesthetics BioMedical
 email: sales@aestheticsbiomed.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Aesthetics BioMedical, Inc. is an aesthetic innovation company
+  uniquely offering procedure and product enhancement, development,
+  clinical indication expansion, application optimization, FDA
+  clearance expertise, and worldwide distribution solutions for
+  entrepreneurs, domestic, and international companies.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://aestheticsbiomed.com" # the base hostname & protocol for your site
 twitter_username: aestheticsbiomed
@@ -22,5 +24,3 @@ youtube_username: aestheticsbiomed
 markdown: kramdown
 sass:
     sass_dir: assets/stylesheets
-gems: ['kramdown']
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']

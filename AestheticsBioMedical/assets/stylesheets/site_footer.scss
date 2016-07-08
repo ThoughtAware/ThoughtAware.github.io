@@ -4,8 +4,7 @@
 .site-footer {
     border-top: 1px solid $gray;
     padding-top: $spacing-unit;
-    background-color: #000;
-    color: #ddd;
+    color: #ccc;
 }
 
 .site-footer ul {
@@ -42,6 +41,6 @@
     text-decoration: none;
 }
 .social-media-links a:hover {
-    color: $link-hover-color;
+    color: darken($gray-dark, 15%);
 }
 .social-media-links a { padding-right: 10px; }
