@@ -22,3 +22,5 @@ youtube_username: aestheticsbiomed
 markdown: kramdown
 sass:
     sass_dir: assets/stylesheets
+gems: ['kramdown']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
